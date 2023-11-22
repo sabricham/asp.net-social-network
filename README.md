@@ -1,4 +1,4 @@
-<img src="https://github.com/sabricham/asp.net-social-network/assets/149872304/ec9a1757-4770-4874-bdf1-9287bbcd41b6" width=210 height=70>
+<img src="https://github.com/sabricham/asp.net-social-network/assets/149872304/ea50ee17-04ce-44b1-a516-d390d9ccd895" width=210 height=70>
 
 Social Network Application
 
@@ -8,12 +8,12 @@ This projects aims to add the most important basic, intermediate and some of the
 
 Structure version 1:
 
-![structure-1 0](https://github.com/sabricham/asp.net-social-network/assets/149872304/a30f8788-a62e-49a2-878a-61a552093efc)
+![structure-1 0](https://github.com/sabricham/asp.net-social-network/assets/149872304/3a96c2a5-8b1c-43c5-a511-449d03cf1a8c)
 
 Versions:\
-1: Authentication and Authorization - Simple web-site structure with log-in and register forms\
-2: User profile informations - User page to load a personal image and manage personal content\
-3: Feed and content - Front feed page showing all the users published and public content, photos and videos
+1.x Authentication and Authorization - Simple web-site structure with log-in and register forms\
+2.x User profile informations - User page to load a personal image and manage personal content\
+3.x Feed and content - Front feed page showing all the users published and public content, photos and videos
 
 Technical documentation:
 Project developed within Visual Studio Community '22\
