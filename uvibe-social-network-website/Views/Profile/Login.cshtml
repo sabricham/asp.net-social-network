@@ -1,0 +1,30 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Login";
+}
+
+<form class="login-section" method="post" asp-controller="Profile" asp-action="Login">
+    <br />
+    <div class="ui-block-1"><h1>Login</h1></div>
+    <br /><br /><br />
+
+    <div class="ui-block-1">
+        <input type="email" class="form-control" asp-for="Email" placeholder="Email">
+        <span class="text-danger h6" asp-validation-for="Email"></span>
+    </div>
+
+    <div class="ui-block-1">
+        <input type="password" class="form-control" asp-for="Password" placeholder="Password">
+        <span class="text-danger h6" asp-validation-for="Password"></span>
+    </div>
+
+    <div class="ui-block-1">
+        <button type="submit" class="btn btn-primary rounded-4"><h5 class="text-center text-light p-3">Login</h5></button>
+    </div>
+
+    <div class="ui-block-1">
+        <p>Already have an account?</p>
+        <a asp-controller="Profile" asp-action="Register">Register</a>
+    </div>
+
+</form>

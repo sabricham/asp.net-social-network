@@ -1,0 +1,67 @@
+﻿@using System.Security.Claims;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - uvibe_social_network_website</title>
+    <link rel="stylesheet" href="~/css/bootswatchLux.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/uvibe_social_network_website.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="~/images/uvibe-logo.png" class="navbar-brand" asp-controller="Home" asp-action="Index" width="210" height="70"></img>
+                
+                <div class="collapse navbar-collapse" id="navbarColor04">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <p class="h3 pt-3">
+                                <a class="nav-link @(ViewBag.controllerName == "Feed" ? "active" : "")" asp-controller="Home" asp-action="Index">Home</a>
+                            </p>
+                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <p class="h3 pt-3">
+                                    <a class="nav-link @(ViewBag.controllerName == "Profile" ? "active" : "")" asp-controller="Profile" asp-action="Index">Profile</a>
+                                </p>
+                            </li>
+                        }
+                    </ul>
+                    <div>
+                        @if(!User.Identity.IsAuthenticated)
+                        {
+                            <h1 class="text-end pe-3">Welcome Guest</h1>
+                            <p class="text-end pe-4"><a asp-controller="Profile" asp-action="Login">Login</a></p>
+                        }
+                        else
+                        {
+                            <h1 class="text-end pe-3">Welcome @User.FindFirst(ClaimTypes.Name).Value</h1>
+                            <p class="text-end pe-4"><a asp-controller="Profile" asp-action="Logout">Logout</a></p>
+                        }     
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Social Network Example
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

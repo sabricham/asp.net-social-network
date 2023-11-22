@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uvibe-social-network-website", "uvibe-social-network-website.csproj", "{6E416E31-CB14-4F26-8BC4-E97A73E7E928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uvibe-social-network-aws", "..\uvibe-social-network-aws\uvibe-social-network-aws.csproj", "{BC4F15D1-8883-407A-BD15-ED10C2AD49E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E416E31-CB14-4F26-8BC4-E97A73E7E928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E416E31-CB14-4F26-8BC4-E97A73E7E928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E416E31-CB14-4F26-8BC4-E97A73E7E928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E416E31-CB14-4F26-8BC4-E97A73E7E928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4F15D1-8883-407A-BD15-ED10C2AD49E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4F15D1-8883-407A-BD15-ED10C2AD49E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4F15D1-8883-407A-BD15-ED10C2AD49E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4F15D1-8883-407A-BD15-ED10C2AD49E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02C1B8E1-1411-40DC-BB68-085A797A70CC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\uvibe-social-network-website.props" />
+</Project>
